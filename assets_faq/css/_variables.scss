@@ -1,0 +1,21 @@
+// Primary text
+$very-dark-desaturated-blue: #1d1e35;
+$soft-red: #f47c57;
+
+// Background gradient:
+$soft-violet: #af67e9;
+$soft-blue: #6565e7;
+
+// Neutral text
+$very-dark-grayish-blue: #4a4b5e;
+$dark-grayish-blue: #787887;
+
+// Dividers
+$light-grayish-blue: #e7e7e9;
+
+@mixin flex($align, $justify, $flex-flow) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-flow: $flex-flow;
+}

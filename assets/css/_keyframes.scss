@@ -1,0 +1,169 @@
+@keyframes wiggle {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+// First
+@keyframes firstLeftOpen {
+  from {
+    transform: rotate(0) translate(0);
+  }
+  to {
+    transform: rotate(225deg) translate(-5px);
+  }
+}
+@keyframes firstLeftClosed {
+  from {
+    transform: rotate(225deg) translate(-5px);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes firstRightOpen {
+  from {
+    transform: rotate(0) translate(0);
+  }
+  to {
+    transform: rotate(-225deg) translate(5px, -1px);
+  }
+}
+@keyframes firstRightClosed {
+  from {
+    transform: rotate(-225deg) translate(5px, -1px);
+  }
+  to {
+    transform: rotate(0) translate(0);
+  }
+}
+
+// Second
+@keyframes slideToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Third
+@keyframes thirdLeftOpen {
+  from {
+    transform: rotate(0) translate(0);
+  }
+  to {
+    transform: rotate(-225deg) translate(-5px);
+  }
+}
+@keyframes thirdLeftClosed {
+  from {
+    transform: rotate(-225deg) translate(-5px);
+  }
+  to {
+    transform: rotate(0deg) translate(0);
+  }
+}
+
+@keyframes thirdRightOpen {
+  from {
+    transform: rotate(0) translate(0);
+  }
+  to {
+    transform: rotate(225deg) translate(5px, 1px);
+  }
+}
+@keyframes thirdRightClosed {
+  from {
+    transform: rotate(225deg) translate(5px, 1px);
+  }
+  to {
+    transform: rotate(0) translate(0);
+  }
+}

@@ -1,0 +1,84 @@
+#burger {
+  width: 2rem;
+  height: 1.4rem;
+  @include flex(center, space-between, column nowrap);
+
+  .first,
+  .second,
+  .third {
+    @include flex(center, center);
+    width: 100%;
+
+    div {
+      width: 50%;
+      background-color: $red;
+      height: 4px;
+    }
+  }
+
+  &.closed {
+    .first {
+      div {
+        &:first-child {
+          animation: firstLeftClosed forwards $animation-time 1 ease-out;
+        }
+        &:last-child {
+          animation: firstRightClosed forwards $animation-time 1 ease-out;
+        }
+      }
+    }
+    .second {
+      div {
+        &:first-child {
+          animation: slideFromLeft forwards $animation-time 1 ease-out;
+        }
+        &:last-child {
+          animation: slideFromRight forwards $animation-time 1 ease-out;
+        }
+      }
+    }
+    .third {
+      div {
+        &:first-child {
+          animation: thirdLeftClosed forwards $animation-time 1 ease-out;
+        }
+        &:last-child {
+          animation: thirdRightClosed forwards $animation-time 1 ease-out;
+        }
+      }
+    }
+  }
+
+  &.open {
+    .first {
+      div {
+        &:first-child {
+          animation: firstLeftOpen forwards $animation-time 1 ease-out;
+        }
+        &:last-child {
+          animation: firstRightOpen forwards $animation-time 1 ease-out;
+        }
+      }
+    }
+    .second {
+      div {
+        &:first-child {
+          animation: slideToLeft forwards 300ms 150ms 1 ease-out;
+        }
+        &:last-child {
+          animation: slideToRight forwards 300ms 150ms 1 ease-out;
+        }
+      }
+    }
+    .third {
+      div {
+        &:first-child {
+          animation: thirdLeftOpen forwards $animation-time 1 ease-out;
+        }
+        &:last-child {
+          animation: thirdRightOpen forwards $animation-time 1 ease-out;
+        }
+      }
+    }
+  }
+}

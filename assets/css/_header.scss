@@ -1,0 +1,50 @@
+header {
+  @include flex(center, space-between);
+  padding: 2rem;
+  position: relative;
+}
+
+@import "./burger";
+
+.menu {
+  @include flex(center, center, column nowrap);
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  left: 1.75rem;
+  right: 1.75rem;
+  top: 7rem;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translate(-100%);
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
+  z-index: 200;
+
+  &--open {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  li {
+    margin: 0.75rem 0;
+  }
+
+  a {
+    color: $very-dark-blue;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .login {
+    border-top: 1px solid $grayish-blue;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+
+    a {
+      color: $grayish-blue;
+    }
+  }
+}

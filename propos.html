@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A slideshow with different artsy CSS grid layouts"
+    />
+    <meta
+      name="keywords"
+      content="css grid, layout, slideshow, irregular, html, javascript, reveal, animation"
+    />
+    <meta name="author" content="Codrops" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/revealer.css" />
+    <link rel="stylesheet" type="text/css" href="pater/pater.css" />
+    <script src="assets/js/index.js" defer></script>
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+
+  <div id="grey-square"></div>
+  <header>
+    <nav>
+      <div id="burger">
+        <div class="first">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="second">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="third">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="offres.html">Nos offres</a></li>
+        <li><a href="authentificatin.html">Login</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="login"><a href="#"> A propos </a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <section id="testimonials">
+        <article class="testimonial__card">
+          <div class="testimonials__quotes">
+            <img src="images/bg-quotes.png" alt="" />
+          </div>
+          <p>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonials__card__profile">
+            <div class="profile__img">
+              <img src="images/profile-1.jpg" alt="" />
+            </div>
+            <div class="profile__info">
+              <span> Satish Patel </span>
+              <span> Founder & CEO, Huddle </span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial__card">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonials__card__profile">
+            <div class="profile__img">
+              <img src="images/profile-2.jpg" alt="" />
+            </div>
+            <div class="profile__info">
+              <span> Bruce McKenzie </span>
+              <span> Founder & CEO, Huddle </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial__card">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonials__card__profile">
+            <div class="profile__img">
+              <img src="images/profile-3.jpg" alt="" />
+            </div>
+            <div class="profile__info">
+              <span> Iva Boyd </span>
+              <span> Founder & CEO, Huddle </span>
+            </div>
+          </div>
+        </article>
+      </section>
+      
+    </main>
+    <section class="were-different">
+    <div class="line"></div>
+    <h2> We’re different</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="images/icon-snappy-process.svg" alt="lightning bolt icon">
+        <h3>Snappy Process</h3>
+        <p> Our application process can be completed in minutes, not hours. Don’t get
+          stuck filling in tedious forms.</p>
+      </div>
+      <div class="card">
+        <img src="images/icon-affordable-prices.svg" alt="dollar sign icon">
+        <h3>Affordable Prices</h3>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+          but we still offer the best coverage possible.</p>
+      </div>
+      <div class="card">
+        <img src="images/icon-people-first.svg" alt="person outline icon">
+        <h3>People First</h3>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+          sure you’re covered when you need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="find-out-more">
+    <h2>Find out more about how we work</h2>
+    <button class="btn-clear"><a href="#">How we work</a></button>
+  </section>
+
+  <footer>
+    <div class="footer-head">
+      <img src="images/logo.svg" alt="Insure">
+      <div class="social flex">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook">
+          <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
+          <a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="column">
+        <a href="#">Our company</a>
+        <a href="#">How we work</a>
+        <a href="#">Why insure</a>
+        <a href="#">View plans</a>
+        <a href="#">Reviews</a>
+      </div>
+      <div class="column">
+        <a href="#">Help me</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="column">
+        <a href="#">Contact</a>
+        <a href="#">Sales</a>
+        <a href="#">Support</a>
+        <a href="#">Live chat</a>
+      </div>
+      <div class="column">
+        <a href="#">Others</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Licences</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sarah</a>.
+  </div>
+  </body>
+</html>

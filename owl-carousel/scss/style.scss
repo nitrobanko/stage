@@ -1,0 +1,179 @@
+@import "./reset";
+@import "./variables";
+@import "./keyframes";
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: #222;
+}
+
+main {
+  min-height: 100vh;
+  // background-color: $red;
+  // background-image: url('../images/bg-intro-desktop.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  background: center / cover $red url("../images/bg-intro-desktop.png")
+    no-repeat;
+  @include flex(center, center);
+  color: #fff;
+  overflow-x: hidden;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.left,
+.right {
+  width: 40%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+.left {
+  max-width: 600px;
+  width: 100%;
+  animation: slide-in-left 0.5s 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.right {
+  max-width: 560px;
+  width: 100%;
+  animation: slide-in-right 0.5s 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.card__header {
+  background-color: $blue;
+  padding: 0.75rem;
+  width: 100%;
+  text-align: center;
+  border-radius: $card-radius;
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  transform: translate(0, 0);
+
+  &:hover {
+    animation: wiggle 900ms both;
+  }
+
+  h2 {
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+.card {
+  border-radius: $card-radius;
+  padding: 2rem;
+  background-color: #fff;
+  @include flex(center, center, column nowrap);
+
+  .input__container {
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 4px;
+    transition: all 250ms ease;
+
+    &::placeholder {
+      color: $dark-blue;
+    }
+
+    &:focus {
+      border-color: $blue;
+
+      &::placeholder {
+        font-weight: bold;
+      }
+    }
+  }
+
+  small {
+    color: $grayish-blue;
+    font-size: 0.75em;
+  }
+
+  .terms {
+    strong {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
+
+.btn {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  display: inline-block;
+  width: 100%;
+  background-color: $green;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin: 1rem 0;
+  box-shadow: 0 3px 0px
+    transparentize($color: darken($green, 10%), $amount: 0.2);
+}
+
+.btn {
+  transition: all 250ms ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:hover,
+  &:disabled {
+    background-color: lighten($color: $green, $amount: 10%);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.error--icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+}
+
+.error--input {
+  border: 2px solid $red !important;
+
+  &::placeholder {
+    color: $red !important;
+    font-weight: 700 !important;
+  }
+}
+
+.error--message {
+  font-style: italic !important;
+  color: $red;
+  text-align: right;
+  width: 100%;
+}

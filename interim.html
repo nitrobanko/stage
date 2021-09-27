@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32f.png"
+    />
+
+    <title>Espace agence intérim</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets_faq/css/aginterim.css" />
+    <script src="assets_faq/js/inter.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner-width">
+        <a href="#" class="logo"><img src="griplanning.png" alt="" /></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+          <a href="calendar.html"
+            ><i class="fas fa-home home"></i> Mon planning</a
+          >
+          <a href="#"
+            ><i class="fas fa-align-left about"></i> Mes notifications</a
+          >
+          <a href="#"><i class="fab fa-buffer works"></i> Mon compte</a>
+          <a href="#"><i class="fas fa-users team"></i> Paramètres</a>
+          <a href="index.html"
+            ><i class="fas fa-headset contact"></i> Déconnexion</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="article--wrapper">
+          <img
+            class="box"
+            src="images/illustration-box-desktopfaq.svg"
+            alt=""
+          />
+
+          <article>
+            <div class="left">
+              <img
+                class="woman"
+                src="images/illustration-woman-online-desktopfaq.svg"
+              />
+              <div class="shadow">
+                <img
+                  class="shadow--image"
+                  src="images/bg-pattern-desktopfaq.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="right">
+              <h1>Agence intérim</h1>
+              <ul>
+                <li>
+                  <div class="question">
+                    <h2>Intuitif et collaboratif</h2>
+                    <img class="arrow" src="images/icon-arrow-downfaq.svg" />
+                  </div>
+                  <p class="paragraph--hidden">
+                    . Mettez à jour vos plannings facilement et rapidement par
+                    glisser-déposer; améliorez la réactivité et l'efficacité de
+                    vos équipes
+                  </p>
+                </li>
+                <li>
+                  <div class="question">
+                    <h2>Flexible et polyvalent</h2>
+                    <img class="arrow" src="images/icon-arrow-downfaq.svg" />
+                  </div>
+                  <p class="paragraph--hidden">
+                    Pilotez vos activités et vos processus de gestion de
+                    ressources; gérez vos projets, chantiers, interventions,
+                    maintenance, ressources humaines, parcs, formations ...
+                  </p>
+                </li>
+                <li>
+                  <div class="question">
+                    <h2>Mobile et intégré</h2>
+                    <img class="arrow" src="images/icon-arrow-downfaq.svg" />
+                  </div>
+                  <p class="paragraph--hidden">
+                    Connectez-vous quand et où vous voulez! Interfacez VISUAL
+                    PLANNING à votre système d'information
+                  </p>
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript">
+      $(".menu-toggle-btn").click(function () {
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>

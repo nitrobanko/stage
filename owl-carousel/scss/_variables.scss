@@ -1,0 +1,22 @@
+//  Colors
+//  Primary
+$red: #ff7a7a;
+$green: #38cc8c;
+
+// Accent
+$blue: hsl(248, 32%, 49%);
+
+// Neutral
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+$card-radius: 7px;
+
+@mixin flex($align, $justify, $flex-flow: row nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-flow: $flex-flow;
+}
+
+$animation-time: 300ms;
